@@ -40,9 +40,9 @@ Widget::Widget(QWidget *parent)
         lb->hide();
 
 
-    m_showOutput<<"未知";
+    m_showOutput<<"題目沒提\n暫叫五條";
 
-    m_showOutput<<"皇家同花順";
+    m_showOutput<<"皇家\n同花順";
 
     m_showOutput<<"同花順";
 

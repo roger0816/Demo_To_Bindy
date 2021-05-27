@@ -2,11 +2,7 @@
 
 CClassA::CClassA(QObject *parent) : QObject(parent)
 {
-    QList<int> list;
 
-    list<<1<<2<<3<<4<<4;
-
-    test3(list);
 }
 
 void CClassA::test1()
@@ -65,7 +61,12 @@ int  CClassA::test3(QList<int> listPoker)
     bool bHasPairt = theSameNum(iMinCount,iMaxCount);
 
 
-    if(isRoyal())
+    if(iMaxCount==5)
+    {
+        iRe = Five;
+    }
+
+    else if(isRoyal())
     {
         iRe = Royal_Straight_Flush;
     }
@@ -107,7 +108,16 @@ int  CClassA::test3(QList<int> listPoker)
     else {}
 
 
-    qDebug()<<"re : "<<iRe;
+    qDebug()<<"status : "<<iRe;
+
+    QString sTmp;
+    foreach(int i , m_listData)
+    {
+        sTmp+=" 0x"+QString::number(i,16);
+
+    }
+
+    qDebug()<<sTmp;
 
     return iRe;
 }
@@ -201,7 +211,8 @@ bool CClassA::isRoyal()
     if(!isStraight() || !isFlush())
         return bRe;
 
-    if(m_listData.first() >= _Poker(_10) + m_iKingCount)
+
+    if(m_listData.first()%0x100 > _Poker(_10))
     {
         bRe = true;
     }
@@ -248,7 +259,7 @@ bool CClassA::isStraight()
         return bRe;
 
 
-    int iDiff = 4 - m_iKingCount;  //最大最小落差
+    int iDiff = 4 ;  //最大最小落差
 
 
     QList<int > listTmp ;

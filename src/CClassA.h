@@ -36,6 +36,7 @@ enum _Poker
 
 enum _REPORT
 {
+    Five =0,    //題目沒提到，暫叫五條
     Royal_Straight_Flush = 1,              //皇家同花順
     Straight_Flush,      //同花順
     Four_of_a_Kind,      //金鋼 ,應該跟鐵支一樣意思
