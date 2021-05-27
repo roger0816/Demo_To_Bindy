@@ -6,14 +6,26 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1157</width>
-    <height>758</height>
+    <width>1323</width>
+    <height>803</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Widget</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item row="0" column="0">
     <widget class="QWidget" name="widget" native="true">
      <property name="font">
@@ -21,8 +33,8 @@
        <pointsize>16</pointsize>
       </font>
      </property>
-     <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,2,4">
+      <item>
        <widget class="QLabel" name="label">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
@@ -30,123 +42,108 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
         <property name="text">
-         <string>面試題 0527  陳晁偉</string>
+         <string>面試考題 0527  陳晁偉</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="QWidget" name="widget_2" native="true">
-        <layout class="QGridLayout" name="gridLayout_3">
-         <item row="0" column="0">
-          <widget class="QWidget" name="test2" native="true">
-           <property name="styleSheet">
-            <string notr="true">QWidget#test2{background-color: rgb(233, 255, 252);}</string>
-           </property>
-           <layout class="QGridLayout" name="gridLayout_4">
-            <item row="0" column="0">
-             <widget class="QWidget" name="widget_6" native="true">
-              <property name="minimumSize">
-               <size>
-                <width>120</width>
-                <height>0</height>
-               </size>
-              </property>
+      <item>
+       <widget class="QWidget" name="test2" native="true">
+        <property name="styleSheet">
+         <string notr="true">QWidget#test2{background-color: rgb(233, 255, 252);}</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="1">
+          <widget class="QWidget" name="widget_7" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QWidget" name="widget_3" native="true">
               <property name="maximumSize">
                <size>
-                <width>120</width>
-                <height>16777215</height>
+                <width>16777215</width>
+                <height>80</height>
                </size>
               </property>
-              <property name="font">
-               <font>
-                <pointsize>16</pointsize>
-               </font>
-              </property>
-              <widget class="QLabel" name="label_2">
-               <property name="geometry">
-                <rect>
-                 <x>30</x>
-                 <y>20</y>
-                 <width>151</width>
-                 <height>61</height>
-                </rect>
-               </property>
-               <property name="text">
-                <string>排序</string>
-               </property>
-              </widget>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QWidget" name="widget_7" native="true">
-              <layout class="QVBoxLayout" name="verticalLayout">
+              <layout class="QHBoxLayout" name="horizontalLayout">
                <item>
-                <widget class="QWidget" name="widget_3" native="true">
-                 <layout class="QHBoxLayout" name="horizontalLayout">
-                  <item>
-                   <widget class="QSpinBox" name="sbSort">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>100</width>
-                      <height>16777215</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>16</pointsize>
-                     </font>
-                    </property>
-                    <property name="maximum">
-                     <number>1000</number>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="btnAddSort">
-                    <property name="font">
-                     <font>
-                      <pointsize>16</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Add</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="btnSortClear">
-                    <property name="font">
-                     <font>
-                      <pointsize>16</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>clear</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QLabel" name="lbInput">
-                    <property name="text">
-                     <string/>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
+                <widget class="QSpinBox" name="sbSort">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="lbSort">
+                <widget class="QPushButton" name="btnAddSort">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Add</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnSortClear">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>clear</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="lbInput">
                  <property name="text">
                   <string/>
                  </property>
@@ -155,13 +152,38 @@
               </layout>
              </widget>
             </item>
+            <item>
+             <widget class="QLabel" name="lbSort">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
            </layout>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>排序</string>
+           </property>
           </widget>
          </item>
         </layout>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item>
        <widget class="QWidget" name="test3" native="true">
         <property name="styleSheet">
          <string notr="true">QWidget#test3{background-color: rgb(231, 255, 235);}</string>
@@ -169,6 +191,12 @@
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
           <widget class="QLabel" name="label_3">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>120</width>
@@ -200,6 +228,12 @@
                    <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>120</width>
+                   <height>0</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
                    <pointsize>16</pointsize>
@@ -207,7 +241,12 @@
                  </property>
                  <item>
                   <property name="text">
-                   <string>黑桃</string>
+                   <string>方塊</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>梅花</string>
                   </property>
                  </item>
                  <item>
@@ -217,12 +256,17 @@
                  </item>
                  <item>
                   <property name="text">
-                   <string>方塊</string>
+                   <string>黑桃</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>梅花</string>
+                   <string>小王</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>大王</string>
                   </property>
                  </item>
                 </widget>
@@ -234,6 +278,12 @@
                    <horstretch>0</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>80</width>
+                   <height>0</height>
+                  </size>
                  </property>
                  <property name="font">
                   <font>
@@ -308,6 +358,19 @@
                 </widget>
                </item>
                <item>
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
                 <widget class="QPushButton" name="btnPkAdd">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
@@ -357,10 +420,10 @@
                 </spacer>
                </item>
                <item>
-                <widget class="QLabel" name="label_4">
+                <widget class="QLabel" name="lbMsg">
                  <property name="minimumSize">
                   <size>
-                   <width>100</width>
+                   <width>200</width>
                    <height>0</height>
                   </size>
                  </property>
@@ -405,20 +468,50 @@
                  </property>
                 </widget>
                </item>
+               <item>
+                <widget class="QCheckBox" name="cbKing">
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="text">
+                  <string>大小王</string>
+                 </property>
+                </widget>
+               </item>
               </layout>
              </widget>
             </item>
             <item row="1" column="0">
              <widget class="QWidget" name="widget_9" native="true">
               <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <property name="spacing">
+                <number>15</number>
+               </property>
                <item>
                 <widget class="QWidget" name="widget_10" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 249, 243);</string>
+                 </property>
                  <layout class="QGridLayout" name="gridLayout_6">
+                  <property name="verticalSpacing">
+                   <number>15</number>
+                  </property>
                   <item row="0" column="0">
                    <widget class="QLabel" name="lbPk0">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
                     <property name="font">
                      <font>
-                      <pointsize>16</pointsize>
+                      <pointsize>32</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -426,6 +519,30 @@
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="btnCh0">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>隨機</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="btnSet0">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>指定</string>
                     </property>
                    </widget>
                   </item>
@@ -439,12 +556,30 @@
                    <pointsize>16</pointsize>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 249, 243);</string>
+                 </property>
                  <layout class="QGridLayout" name="gridLayout_7">
+                  <property name="verticalSpacing">
+                   <number>15</number>
+                  </property>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="btnCh1">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>隨機</string>
+                    </property>
+                   </widget>
+                  </item>
                   <item row="0" column="0">
                    <widget class="QLabel" name="lbPk1">
                     <property name="font">
                      <font>
-                      <pointsize>16</pointsize>
+                      <pointsize>32</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -455,17 +590,35 @@
                     </property>
                    </widget>
                   </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="btnSet1">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>指定</string>
+                    </property>
+                   </widget>
+                  </item>
                  </layout>
                 </widget>
                </item>
                <item>
                 <widget class="QWidget" name="widget_12" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 249, 243);</string>
+                 </property>
                  <layout class="QGridLayout" name="gridLayout_8">
+                  <property name="verticalSpacing">
+                   <number>15</number>
+                  </property>
                   <item row="0" column="0">
                    <widget class="QLabel" name="lbPk2">
                     <property name="font">
                      <font>
-                      <pointsize>16</pointsize>
+                      <pointsize>32</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -476,21 +629,78 @@
                     </property>
                    </widget>
                   </item>
-                 </layout>
-                </widget>
-               </item>
-               <item>
-                <widget class="QWidget" name="widget_13" native="true">
-                 <layout class="QGridLayout" name="gridLayout_9">
-                  <item row="0" column="0">
-                   <widget class="QLabel" name="lbPk3">
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="btnCh2">
                     <property name="font">
                      <font>
                       <pointsize>16</pointsize>
                      </font>
                     </property>
                     <property name="text">
+                     <string>隨機</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="btnSet2">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>指定</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_13" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 249, 243);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_9">
+                  <property name="verticalSpacing">
+                   <number>15</number>
+                  </property>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="btnCh3">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>隨機</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="lbPk3">
+                    <property name="font">
+                     <font>
+                      <pointsize>32</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
                      <string>3</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="btnSet3">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>指定</string>
                     </property>
                    </widget>
                   </item>
@@ -499,12 +709,18 @@
                </item>
                <item>
                 <widget class="QWidget" name="widget_14" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 249, 243);</string>
+                 </property>
                  <layout class="QGridLayout" name="gridLayout_10">
+                  <property name="verticalSpacing">
+                   <number>15</number>
+                  </property>
                   <item row="0" column="0">
                    <widget class="QLabel" name="lbPk4">
                     <property name="font">
                      <font>
-                      <pointsize>16</pointsize>
+                      <pointsize>32</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -512,6 +728,30 @@
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="btnCh4">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>隨機</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="btnSet4">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>指定</string>
                     </property>
                    </widget>
                   </item>
@@ -537,14 +777,17 @@
               </property>
               <layout class="QGridLayout" name="gridLayout_11">
                <item row="0" column="0">
-                <widget class="QLabel" name="label_5">
+                <widget class="QLabel" name="lbOutput">
                  <property name="font">
                   <font>
-                   <pointsize>12</pointsize>
+                   <pointsize>30</pointsize>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(243, 255, 225);</string>
+                 </property>
                  <property name="text">
-                  <string>TextLabel</string>
+                  <string/>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignCenter</set>
